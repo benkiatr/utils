@@ -1,4 +1,4 @@
-@extends('layout.fronted')
+@extends('layout.internals')
 
 @section('content')
     <div class="container mt-5">
