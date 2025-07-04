@@ -13,7 +13,7 @@
         @livewireStyles
     </head>
     <body class="bg-[#FDFDFC] dark:bg-[#0f0f0f] text-[#1b1b18]  flex items-center lg:justify-center min-h-screen flex-col">
-        @include('layout.includes.navbar')
+        <x-layout.includes.navbar/>
         <div class="flex items-start justify-center w-full mt-4 transition-opacity m-0 p-0  opacity-100 duration-750 lg:grow starting:opacity-0">
             <main class="flex w-full justify-center items-center p-0 m-0">
                 {{ $slot }}

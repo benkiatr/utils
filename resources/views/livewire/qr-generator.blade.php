@@ -8,10 +8,12 @@
                 <button wire:click="generateQr" class="px-5 py-2 ml-auto mr-0 mt-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Generar QR</button>
             </div>
         </div>
-        <div class=" w-3/4 max-w-3xl">
-            @if ($qrImage)
-                <img src="data:image/png;base64,{{ $qrImage }}" alt="QR Code">
-            @endif
+        <div class=" w-3/4 max-w-4xl p-6">
+            <div class="flex justify-start items-center">
+                @if ($qrImage)
+                    <img src="{{ $qrImage }}" alt="QR Code">
+                @endif
+            </div>
         </div>
     </div>
 </div>

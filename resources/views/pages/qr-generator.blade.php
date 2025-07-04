@@ -1,5 +1,5 @@
-@extends('layout.internals')
+<x-layout.internals>
 
-@section('content')
 <livewire:qr-generator/>
-@endsection
+
+</x-layout.internals>
