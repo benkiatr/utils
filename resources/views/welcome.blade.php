@@ -1,4 +1,4 @@
-@extends('layout.fronted')
+<x-layout.fronted>
 
 @section('content')
     <!-- Card 1 -->
@@ -23,3 +23,5 @@
     buttonText="Acortar URL"
     buttonUrl="{{ route('qr.form') }}"></x-util-card>
 @endsection
+
+</x-layout.fronted>
